@@ -34,7 +34,6 @@ function filtrarPesquisa() {
     let filtro = barraDePesquisa.value.toLowerCase()
 
     if (filtro != "") {
-        console.log(filtro)
         videos.forEach(video => {
             let titulo = video.querySelector(".titulo-video").textContent.toLowerCase()
             video.style.display = titulo.includes(filtro) ? 'block' : 'none'
