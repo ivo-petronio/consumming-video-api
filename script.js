@@ -35,7 +35,7 @@ function filtrarPesquisa() {
 
     if (filtro != "") {
         videos.forEach(video => {
-            const titulo = video.querySelector(".titulo-video").textContent.toLowerCase()
+            let titulo = video.querySelector(".titulo-video").textContent.toLowerCase()
             video.style.display = titulo.includes(filtro) ? 'block' : 'none'
         })
     }
